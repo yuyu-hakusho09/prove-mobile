@@ -1,0 +1,478 @@
+@font-face{
+    font-family: aqrada;
+    src: url(font/AQRADA.woff);
+}
+
+
+body{
+    font-family:     'Manrope', sans-serif;
+    overscroll-behavior-y: smooth;
+}
+
+nav{
+    height: 70px;
+    position: relative;
+    z-index: 3;
+}
+
+.hero{
+    background: black;
+    height: 100vh;
+    max-height: 740px;
+}
+
+.container-fluid{
+    border: 1px solid red;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.g-nav{
+    gap: 50px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.reg-nav{
+    width: 2px;
+    height: 40px;
+    background: white;
+}
+
+.nav-index{
+    z-index: 10;
+    position: fixed;
+}
+
+.social{
+    gap: 20px;
+}
+
+.intro{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.row{
+    position: relative;
+    z-index: 3;
+}
+
+.ham{
+    display: none;
+}
+
+.headline{
+    color: #FF8900;
+    font-family: aqrada;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.phar-hero{
+    color:white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.b-border{
+    border: 2px solid white;
+    color: white;
+    border-radius: 0;
+    padding: 0.8rem 1rem;
+    position: relative;
+    transition: all .35s;
+    font-weight: 600;
+}
+
+.color{
+    background: #FF8900;
+    color: white;
+    border-radius: 0;
+    padding: 0.8rem 2rem;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.color:hover{
+   background: #d37100;
+   color: white;
+}
+
+.row-hero{
+    padding: 0 1.5rem;
+}
+
+
+
+.c-hero{
+    height: 550px;
+}
+
+.row-hero{
+    margin-top: 100px;
+    position: relative;
+    border: 1px solid red;
+
+}
+
+.b-border:hover{
+    color: black;
+    border: 2px solid white;
+}
+
+.b-border span{
+    position: relative;
+    z-index: 2;
+}
+  
+.b-border:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    transition: all .35s;
+}
+
+.b-border:hover:after{
+    width: 100%;
+}
+
+.about-us{
+    padding: 3rem 0;
+    position: relative;
+    z-index: 5;
+    background: white;
+    z-index: 5;
+}
+
+
+.c-about{
+    padding: 6rem 4rem; 
+}
+
+.text-about{
+    padding-left: 2rem;
+}
+
+.titol{
+    font-family: 'Lora', serif;
+    font-size: 3.3rem;
+}
+
+.about{
+    margin-top: 5rem;
+}
+
+.c-drink{
+    padding: 3.5rem 3rem;
+    position: relative;
+}
+
+.drink{
+    background: url(img/background-wine.svg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 5;
+}
+
+.drink-text{
+    color: #FF8900;
+    margin-top: 4rem;
+}
+
+.text-drink{
+    padding-left: 4rem;
+}
+
+.p-white{
+  color: white;
+  margin-bottom: 20px;
+}
+
+.col-md{
+    padding: 1rem;
+}
+
+.center-img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+.contact{
+    background: white;
+    position: relative;
+    z-index: 5;
+    padding: 4rem 0 0 0;
+}
+
+.c-contact{
+    padding: 2rem;
+}
+
+
+.icon{
+    background: #FF8900;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+
+.mail{
+    width: 60%;
+}
+
+.contact-row{
+    padding: 40px;
+}
+
+.icon-text{
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+.maps{
+    background: white;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 4rem;
+}
+
+.google-maps{
+    width: 100%;
+    height: 500px;
+}
+
+footer{
+    padding: 2rem;
+    background: rgb(28, 28, 28);
+    position: relative;
+    z-index: 5;
+}
+
+
+
+.top-footer{
+    height: 50px;
+    gap: 150px;
+}
+
+.top-footer a{
+    text-decoration: none;
+    display: contents;
+    color: white;
+}
+
+
+.content-footer{
+    border: 1px solid red;
+}
+
+.mark-none{
+    list-style-type: none ;
+}
+
+.line-footer{
+    background: white;
+    height: 2px;
+}
+
+.phar-footer{
+    color: white;
+    margin-top: 20px;
+}
+
+.c-footer{
+    padding: 0 0;
+}
+
+
+/* animation */
+
+.up-nav{
+    position: absolute;
+    z-index: 5;
+}
+
+nav{
+    position: relative;
+    transition: all 0.6s;
+}
+
+nav span{
+    height: 0px;
+    background: white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    transition: all 0.6s;
+}
+
+.tra-nav{
+    height: 70px;
+}
+
+
+.nav-hide{
+    position: relative;
+}
+
+.reg-nav{
+    transition: all 0.6s;
+}
+
+
+
+.link{
+    transition: all 0.6s;
+}
+
+
+.logo-tra{
+    visibility: hidden;
+    transform: translateY(-250%);
+    transition: all 1s;
+}
+
+.logo-view{
+    visibility: visible;
+    transform: translateY(0%);
+}
+
+.dark-color{
+    color: #1D1D1D ;
+    font-weight: 600;
+}
+
+.dark-bg{
+    background: #1D1D1D;
+}
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .contact-row{
+        padding: 40px 0;
+    }
+
+    .c-contact{
+        padding: 2rem 0;
+    }
+}
+
+
+@media (max-width:768px) {
+  .nav-hide{
+    display: none;
+  }
+
+  .ham{
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+
+  .big-logo{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .headline{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+  }
+
+
+  .row-hero{
+    margin-top: 12rem;
+  }
+
+  .row{
+    padding: 0 0;
+  }
+
+  .color{
+    margin-right: 0;
+    margin-top: 5px;
+  }
+
+  .f-b{
+    bottom: 50px;
+    z-index: 2; 
+   }
+
+
+   .c-about{
+    padding: 0 0;
+   }
+
+   .text-about{
+    padding-left: 0;
+   }
+
+   .titol{
+    font-size: 2.5rem;
+   }
+
+   .about{
+    margin-top: 3rem;
+   }
+
+   .fixed-bottom{
+    position: static;
+   }
+
+   .c-drink{
+    padding: 0 0 2rem 0;
+   }
+
+   .phar-hero{
+    padding-left: 0.1rem;
+   }
+
+
+   .text-drink{
+    padding-left: 10px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+   }
+
+   .img-bottle{
+    width: 30%;
+    margin-top: 40px;
+   }
+
+   .google-maps{
+    width: 100%;
+    height: 300px;
+  }
+
+  .top-footer{
+    gap: 90px;
+  }
+
+}
